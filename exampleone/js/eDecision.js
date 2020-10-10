@@ -138,3 +138,46 @@ function mostrarmensajeDos()
                let mensaje = interruptor == 0 ? "off" : "on"
                      alert(mensaje)
           }
+
+          function hotel ()
+          {
+             let cantidad_personas = document.getElementById('cantidad_personas').value
+             let cantidad_dias   =  document.getElementById('cantidad_dias').value
+             let subtotal = 0
+             let total = 0
+             let tarifa =  0
+
+             const tarifa_individual = 2500
+             const tarifa_doble=4600
+             const tarifa_familiar= 5200
+             const iva =(19/100)
+
+             if (cantidad_personas ==1) {
+                subtotal =(tarifa_individual * cantidad_dias)
+                total =(subtotal+(subtotal*iva))
+                tarifa=(total-(total*(5/100)))
+                
+             } else {
+               if (cantidad_personas==2) {
+                  subtotal=(tarifa_doble * cantidad_dias)
+                  total=(subtotal+(subtotal*iva))
+                  tarifa=(total-(total*(9/100)))
+                  
+               } else {
+                  if (cantidad_personas >=3) {
+                     subtotal=(tarifa_familiar * cantidad_dias)
+                     total =(subtotal+(subtotal*iva))
+                     tarifa=(total-(total*(15/100)))
+                     
+                  } 
+                     
+                  }
+                  
+               }
+
+               let mensaje=('precio sin iva:' + subtotal + '\nprecio con iva:' + total + '\ntotal tarifa con descuento:' + tarifa  );
+
+               alert(mensaje)
+                
+             }
+            
