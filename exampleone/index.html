@@ -49,40 +49,126 @@
                 </section>
                 <br><hr>
                 <section>
-                        <h2> if aninado</h2>
-                        <form>
-                                <label for="edadp">edad</label>
-                                <input type="text" name="edadp"id="edadp">
-                                <br><br>
-                                <label for="estaturap">estatura</label>
-                                <input type="text" name="estaturap"id="estaturap">
-                                <br><br>
-                                <label for="pesop">peso</label>
-                                <input type="text" name="pesop"id="pesop">
-                                <button type="button" onclick="mostrarmensajeDos()">mostrar </button>
-                        </form>
-                        </section>
-                        <br><hr>
-                        <section>
-                                <h2> if & case</h2>
-                                <form>
-                                      
-                        
-                                        <label for="productname">productname</label>
-                                        <input type="text" name="productname"id="productname">
-                                        <button type="button"onclick="mostrarmensajetres()">mostrar</button>
-                                </form>
-                                </section>
-                                <br><hr>
-                                <section>
-                                        <h2> funcions & param</h2>
-                                        <form>
+           <h2> if aninado</h2>
+           <form>
+           <label for="edadp">edad</label>
+           <input type="text" name="edadp"id="edadp">
+           <br><br>
+           <label for="estaturap">estatura</label>
+           <input type="text" name="estaturap"id="estaturap">
+           <br><br>
+           <label for="pesop">peso</label>
+           <input type="text" name="pesop"id="pesop">
+           <button type="button" onclick="mostrarmensajeDos()">mostrar </button>
+           </form>
+           </section>
+           <br><hr>
+        <section>
+             <h2> if & case</h2>
+             <form>         
+             <label for="productname">productname</label>
+             <input type="text" name="productname"id="productname">
+             <button type="button"onclick="mostrarmensajetres()">mostrar</button>
+           </form>
+       </section>
+       <br><hr>
+       <section>
+       <h2> funcions & param</h2>
+       <form>
                                               
                                 
-                                                <button type="button" onclick="prenderApagar(1)">prender</button>
-                                                <button type="button" onclick="prenderApagar(0)">apagar</button>
-                                        </form>
-                                        </section>
+      <button type="button" onclick="prenderApagar(1)">prender</button>
+      <button type="button" onclick="prenderApagar(0)">apagar</button>
+   </form>
+</section>
+                                       
+<br>
+<br>
+ <section>
+         <h2> bucle while</h2>
+         <script>
+         /*  for (let pleople = 1;pleople<=3; pleople++) {
+         let age =prompt("enter age:")
+
+        let ageparameter=20
+        let menssage=(age>=ageparameter)? " sos adulto": "sos menor de edad"
+
+            alert(menssage)
+
+                                             
+                                                        
+          }*/
+
+      /*  let cars=["toyota","mazda","honda","yamaha"] 
+
+         for (let brans = 0; brans<cars.length; brans++) {
+         const viewcars =`${ cars[brans]}  <br>`
+         document.write(viewcars)
+               
+                  
+          }         
+          document.write ( ` <br> ${cars[0]}`)      */ 
+
+        /*  let students = () => {
+                  let studentsName = ""
+                  let paraName = "NN"
+
+                  while (studentsName.toUpperCase () != paraName) {
+                          studentsName = prompt("enter students name")
+
+                                alert (`your name is ${studentsName} resgistered!!`)
+
+                                
+                          
+                  }
+          }
+          students ()*/
+
+     </script>
+ </section>
+ <br>
+ <br>
+ <section>
+         <h2>bucle do while</h2>
+         <script>
+                 let pleople = () => {
+                         let age = 0, paraAge ="*"
+                         let count = 1
+                         let totalage= 0, averangeAge =0
+                         do{
+                                 age =parseInt (prompt("enter age"))
+                                 if (age<=18) {
+                                         alert('i am sorry!!')
+                                         
+                                 } else {
+                                         alert('welcome')
+                                 }
+
+                                 totalage +=age
+                                 
+                                 count++
+
+
+                         }while (age !=paraAge);
+                         averangeAge = parseInt (totalage / count)
+
+                        console.log ( `cantidad:${count}, & total: ${totalage},& promedio ${averangeAge}`)
+                                 
+                         }
+
+                 
+        
+         pleople()
+          
+
+
+                         
+                 
+         </script>
+
+
+
+ </section>
        
         
     
